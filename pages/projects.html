@@ -7,6 +7,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="preload" href="../menu.png" as="image" />
     <style>
       a {
         text-decoration: none;
@@ -16,14 +17,16 @@
   </head>
   <body>
     <header>
-      <p id="header-dropdown-area" onclick="open_dropdown()">Projects</p>
+      <div id="header-dropdown-area" onclick="open_dropdown()">
+        <img src="../menu.png" />
+        <h2>Projects</h2>
+      </div>
       <div id="header-items" class="header-content">
         <a href="index.html">About me</a>
         <a href="design.html">Design</a>
-        <a href="contact.html">Contact</a>
+        <!-- <a href="contact.html">Contact</a> -->
       </div>
     </header>
-
     <div id="main-container">
       <div class="information-container">
         <div class="text-container">
@@ -43,7 +46,9 @@
         <a class="link" href="https://simple-dimple.itch.io/a-short-climb"
           >Play the game on the browser!</a
         >
-        <div class="image-scroll-container">
+
+        <button onclick="open_image(this)">See Images</button>
+        <div class="image-scroll-container-column image-scroll-container">
           <img src="../images/asc1.png" />
           <img src="../images/asc2.png" />
           <img src="../images/asc3.png" />

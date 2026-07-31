@@ -7,32 +7,36 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="preload" href="../menu.png" as="image" />
   </head>
   <body>
     <header>
-      <p id="header-dropdown-area" onclick="open_dropdown()">Design</p>
+      <div id="header-dropdown-area" onclick="open_dropdown()">
+        <img src="../menu.png" />
+        <h2>Design</h2>
+      </div>
       <div id="header-items" class="header-content">
         <a href="index.html">About me</a>
         <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <!-- <a href="contact.html">Contact</a> -->
       </div>
     </header>
 
     <div id="main-container">
       <div class="information-container">
         <div class="text-container">
-          I am currently an incoming 3rd year MSci Computer Science student,
-          with an interest in computer vision, game engines and video game
-          development.
-          <br />
-          <br />
-          Over the past few months, I have been self-learning how to use the
-          Godot Engine and participated in a few games jams, where I have worked
-          with teams and alone. It has been a rewarding experience where I had
-          to understand the different parts that come together to create a video
-          game. A recent game jam, I began learning about tilesets, level
-          design, program structure, lighting and resolution scaling, which are
-          all skills new to me.
+          <h2>Canva posters - Swing Dance Society</h2>
+          During my time at university, I have had the opportunity to learn how
+          to use Canva to create posts and flyers for a society I was leading
+          for a year. It was a very creative process, trying to produce
+          something fun to look but clear to read for students.
+        </div>
+
+        <button onclick="open_image(this)">See Images</button>
+        <div class="image-scroll-container-row image-scroll-container">
+          <img src="../images/Front.png" />
+          <img src="../images/Halloween Social Dance.png" />
+          <img src="../images/Your paragraph text.png" />
         </div>
       </div>
     </div>

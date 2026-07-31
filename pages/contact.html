@@ -7,10 +7,23 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../style.css" />
+    <style>
+      a.links {
+        font-size: 2em;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      #main-container {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <p id="header-dropdown-area" onclick="open_dropdown()">Contact</p>
+      <h2 id="header-dropdown-area" onclick="open_dropdown()">Contact</h2>
       <div id="header-items" class="header-content">
         <a href="index.html">About me</a>
         <a href="projects.html">Projects</a>
@@ -20,20 +33,11 @@
 
     <div id="main-container">
       <div class="information-container">
-        <div class="text-container">
-          I am currently an incoming 3rd year MSci Computer Science student,
-          with an interest in computer vision, game engines and video game
-          development.
-          <br />
-          <br />
-          Over the past few months, I have been self-learning how to use the
-          Godot Engine and participated in a few games jams, where I have worked
-          with teams and alone. It has been a rewarding experience where I had
-          to understand the different parts that come together to create a video
-          game. A recent game jam, I began learning about tilesets, level
-          design, program structure, lighting and resolution scaling, which are
-          all skills new to me.
-        </div>
+        <a class="links" href="https://www.linkedin.com/in/davi-oppes/"
+          >LinkedIn</a
+        >
+        <a class="links" href="https://github.com/davioppes">Github</a>
+        <a class="links" href="mailto:davioppes2006@gmail.com">Email me!</a>
       </div>
     </div>
   </body>

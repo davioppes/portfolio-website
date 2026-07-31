@@ -7,20 +7,56 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="preload" href="../menu.png" as="image" />
   </head>
   <body>
     <header>
-      <p id="header-dropdown-area" onclick="open_dropdown()">About me</p>
+      <div id="header-dropdown-area" onclick="open_dropdown()">
+        <img src="../menu.png" />
+        <h2>About me</h2>
+      </div>
       <div id="header-items" class="header-content">
         <a href="projects.html">Projects</a>
         <a href="design.html">Design</a>
-        <a href="contact.html">Contact</a>
+        <!-- <a href="contact.html">Contact</a> -->
       </div>
     </header>
 
     <div id="main-container">
+      <div class="information-container contact-links">
+        <a class="links" href="https://www.linkedin.com/in/davi-oppes/"
+          >LinkedIn</a
+        >
+        <a class="links" href="https://github.com/davioppes">Github</a>
+        <a class="links" href="mailto:davioppes2006@gmail.com">Email me!</a>
+        <a
+          class="links"
+          href="https://drive.google.com/file/d/1JolUxXyqKEVtpOBvNmFsQh9_D3CBbecZ/view?usp=drive_link"
+          >CV</a
+        >
+      </div>
+
       <div class="information-container">
         <div class="text-container">
+          <h2>I'm Davi Oppes!</h2>
+          I am currently an incoming 3rd year MSci Computer Science student,
+          with an interest in computer vision, game engines and video game
+          development.
+          <br />
+          <br />
+          Over the past few months, I have been self-learning how to use the
+          Godot Engine and participated in a few games jams, where I have worked
+          with teams and alone. It has been a rewarding experience where I had
+          to understand the different parts that come together to create a video
+          game. A recent game jam, I began learning about tilesets, level
+          design, program structure, lighting and resolution scaling, which are
+          all skills new to me.
+        </div>
+      </div>
+
+      <div class="information-container">
+        <div class="text-container">
+          <h2>Hobbies and Interests</h2>
           I am currently an incoming 3rd year MSci Computer Science student,
           with an interest in computer vision, game engines and video game
           development.
