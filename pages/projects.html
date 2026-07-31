@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preload" href="../menu.png" as="image" />
+    <style>
+      a {
+        text-decoration: none;
+        font-size: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="header-dropdown-area" onclick="open_dropdown()">
+        <img src="../menu.png" />
+        <h2>Projects</h2>
+      </div>
+      <div id="header-items" class="header-content">
+        <a href="index.html">About me</a>
+        <a href="design.html">Design</a>
+        <!-- <a href="contact.html">Contact</a> -->
+      </div>
+    </header>
+    <div id="main-container">
+      <div class="information-container">
+        <div class="text-container">
+          <h2>A Short Climb - The Brainless Game Jam Submission</h2>
+          My submission for The Brainless Game Jam, where I spent 6 days working
+          as a solo developer to create a puzzle platformer game! I am really
+          proud of this submission, as I have gotten a lot of great impressions
+          of the game from others, and I managed to do everything on my own in
+          the time I had.
+          <br />
+          <br />
+          This was a very rewarding experience for me as I learned about many
+          new skills that are required for video game development, including
+          level and puzzle design, tilesets, pixel art, and godot program
+          structure.
+        </div>
+        <a class="link" href="https://simple-dimple.itch.io/a-short-climb"
+          >Play the game on the browser!</a
+        >
+
+        <button onclick="open_image(this)">See Images</button>
+        <div class="image-scroll-container-column image-scroll-container">
+          <img src="../images/asc1.png" />
+          <img src="../images/asc2.png" />
+          <img src="../images/asc3.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../script.js"></script>
+</html>
