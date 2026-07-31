@@ -121,7 +121,6 @@ header #header-items a:hover {
 
   padding: 10px;
   height: fit-content;
-  /* width: fit-content; */
 }
 
 .information-container .image-scroll-container-row.show {
@@ -130,7 +129,6 @@ header #header-items a:hover {
   overflow-x: visible;
   overflow-y: hidden;
   gap: 0.5em;
-  width: auto;
 }
 
 .information-container .image-scroll-container-column.show {
@@ -197,7 +195,7 @@ button:hover {
     flex-direction: column;
   }
 
-  .information-container .image-scroll-container-row.show {
-    width: 100%;
+  .information-container {
+    width: auto;
   }
 }
