@@ -33,7 +33,6 @@ header {
   justify-content: space-around;
   background-color: var(--primary-color);
   height: fit-content;
-
   align-items: center;
   position: relative;
 }
@@ -41,36 +40,22 @@ header {
 header #header-items {
   background-color: var(--bg-accent-color);
 
-  display: none;
+  display: flex;
+  justify-content: center;
   position: relative;
-  z-index: 1;
+  gap: 2em;
   width: 100%;
 }
 
 header #header-items a {
   color: var(--secondary-color);
   text-decoration: none;
-
-  padding-block: 0.5em;
-  padding-left: 0.25em;
+  padding-block: 1em;
+  padding-inline: 2em;
 }
 
 header #header-items a:hover {
   background-color: var(--another-color);
-}
-
-#header-items.show {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#header-dropdown-area {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  gap: 1em;
 }
 
 #header-dropdown-area h2 {
@@ -78,9 +63,7 @@ header #header-items a:hover {
 }
 
 #header-dropdown-area img {
-  height: 2.5em;
-  width: 2.5em;
-  padding-left: 0.5em;
+  display: none;
 }
 
 /* #endregion HEADER */
@@ -159,6 +142,7 @@ header #header-items a:hover {
 .contact-links {
   display: flex;
   flex-direction: row;
+  background-color: var(--bg-accent-color);
 }
 
 .contact-links a {
@@ -193,9 +177,42 @@ button:hover {
   #main-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .information-container {
-    width: auto;
+    width: 80vw;
+    margin-inline: 1em;
+  }
+
+  header #header-items {
+    display: none;
+    gap: 0;
+  }
+
+  #header-dropdown-area img {
+    display: block;
+    height: 2.5em;
+    width: 2.5em;
+    padding-left: 0.5em;
+  }
+
+  #header-items.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #header-dropdown-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+  }
+
+  header #header-items a {
+    padding-block: 0.5em;
+    padding-left: 0.25em;
   }
 }

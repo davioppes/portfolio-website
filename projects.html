@@ -9,9 +9,15 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preload" href="menu.png" as="image" />
     <style>
-      a {
-        text-decoration: none;
+      .link {
+        text-decoration: underline;
         font-size: 1em;
+        transition: cubic-bezier() 0.1s ease-in-out;
+      }
+
+      .link:hover {
+        transform: scale(1.2);
+        transform-origin: left;
       }
     </style>
   </head>
@@ -47,8 +53,10 @@
           >Play the game on the browser!</a
         >
 
-        <button onclick="open_image(this)">See Images</button>
-        <div class="image-scroll-container-column image-scroll-container">
+        <button class="images-button" onclick="open_image(this)">
+          Collapse images
+        </button>
+        <div class="image-scroll-container-column image-scroll-container show">
           <img src="images/asc1.png" />
           <img src="images/asc2.png" />
           <img src="images/asc3.png" />

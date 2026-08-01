@@ -6,4 +6,14 @@ function open_image(a) {
   a.parentNode
     .getElementsByClassName("image-scroll-container")[0]
     .classList.toggle("show");
+
+  if (
+    a.parentNode
+      .getElementsByClassName("image-scroll-container")[0]
+      .classList.contains("show")
+  ) {
+    a.textContent = "Collapse images";
+  } else {
+    a.textContent = "See images";
+  }
 }
