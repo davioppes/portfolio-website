@@ -19,7 +19,7 @@ body {
   background-color: var(--bg-color);
   font-family: ashorthike;
   color: var(--secondary-color);
-  background-image: url(/images/tunic.jpg);
+  background-image: url(images/tunic.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
